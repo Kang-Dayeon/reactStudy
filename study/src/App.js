@@ -2,22 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  let postTtl = 'React Study';
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* jsx : js에서 html을 쓰기위한 문법 */}
+      <div className="nav">
+        <h2 className="ttl">dada's Blog</h2>
+      </div>
+      <h3 className="post-ttl">{ postTtl }</h3>
     </div>
   );
 }
