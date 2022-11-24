@@ -7,6 +7,11 @@
   color: #fff;
   padding: 0 20px;
 }
+.list{
+  padding: 0 20px;
+  text-align: left;
+  border-bottom: 1px solid gray;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
