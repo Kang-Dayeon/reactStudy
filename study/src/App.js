@@ -8,11 +8,18 @@ function App() {
   let [subTtl, titleChange] = useState(['리액트 공부', 'React', 'Javascript']);
   let [like, likeChange] = useState(0);
 
-  let titleHandler = ()=>{
+  const titleHandler = ()=>{
+    // deep copy
     let copyTitle = [...subTtl];
     copyTitle[0] = '자바스크립트';
     titleChange(copyTitle)
   };
+
+  const sort = () => {
+    let sortTtl = [...subTtl]
+    sortTtl.sort()
+    titleChange(sortTtl);
+  }
 
   return (
     <div className="App">
@@ -23,6 +30,7 @@ function App() {
       <div className="nav">
         <h2 className="ttl">dada's Blog</h2>
       </div>
+      <button onClick={ sort }>가나다순</button>
       <div className="list">
         <h3>{ subTtl[0] } <span onClick={ ()=>{likeChange(like + 1)} }>👍</span> {like}</h3>
         <button onClick={ titleHandler }>Change</button>
