@@ -45,8 +45,21 @@ function App() {
         <h3>{ subTtl[2] }</h3>
         <p>11월 24일 발행</p>
       </div>
+      <Modal></Modal>
+      
     </div>
   );
+
+}
+
+function Modal(){
+  return(
+    <div className='modal'>
+        <h4>title</h4>
+        <p>dete</p>
+        <p>desc</p>
+    </div>
+  )
 }
 
 export default App;
